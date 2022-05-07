@@ -19,12 +19,15 @@
             android:exported="false" />
         <activity
             android:name=".three"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/Theme.Calculate.NoActionBar">
+
             <intent-filter>
                 <action android:name="top.zzgpro.top.JumpThree" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".Login"
@@ -44,34 +47,43 @@
             android:label="@string/title_activity_login" />
         <activity
             android:name=".lab52"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Calculate.NoActionBar"/>
         <activity
             android:name=".lab5"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Calculate.NoActionBar"/>
         <activity
             android:name=".lab42"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Calculate.NoActionBar"/>
         <activity
             android:name=".RicyclerView"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Calculate.NoActionBar"/>
         <activity
             android:name=".simpleAdapter"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Calculate.NoActionBar"/>
         <activity
             android:name=".baseListView"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Calculate.NoActionBar"/>
         <activity
             android:name=".activity_listview"
             android:exported="false" />
         <activity
             android:name=".activity_third"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Calculate.NoActionBar"/>
         <activity
             android:name=".secondActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Calculate.NoActionBar"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Calculate.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

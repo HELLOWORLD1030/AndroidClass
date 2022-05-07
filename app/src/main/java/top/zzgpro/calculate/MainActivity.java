@@ -39,20 +39,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        EnableButton(R.id.button_jumpMusic,MusicPlayer.class);
+        EnableButton(R.id.button_jumpImage,activity_third.class);
+        EnableButton(R.id.button_jumplab6,Login.class);
+        EnableButton(R.id.button_jumplab5,lab5.class);
+        EnableButton(R.id.button_jumplab52,lab52.class);
+        EnableButton(R.id.button_jumpRecyclerView2,lab42.class);
+        EnableButton(R.id.button_jumpRecyclerView,RicyclerView.class);
+        EnableButton(R.id.button_jumpListView,activity_listview.class);
+        EnableButton(R.id.button_jump1,three.class);
+        EnableButton(R.id.button_jumpSimpleList,simpleAdapter.class);
+        EnableButton(R.id.button_jumpBaseList,baseListView.class);
+        EnableButton(R.id.button_jump,secondActivity.class);
 
 
-        JumpToLabTwo();
-        JumpToBaseListView();
-        JumpToSimpleListView();
-        JumpToLabThree();
-        JumpToListView();
-        JumpToRecyclerView();
-        JumpToRecyclerView2();
-        JumpToLab5();
-        JumpToLab52();
-        JumpToLab6();
-        JumpToImage();
-        JumpToMusic();
 
     }
 
@@ -135,131 +135,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    private void JumpToBaseListView(){
-        Button button=(Button) findViewById(R.id.button_jumpBaseList);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,baseListView.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToSimpleListView(){
-        Button button=(Button) findViewById(R.id.button_jumpSimpleList);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,simpleAdapter.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToLabTwo(){
-        Button jumpBun=(Button)findViewById(R.id.button_jump);
-        jumpBun.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,secondActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToLabThree(){
-        Button jumpBun1=(Button)findViewById(R.id.button_jump1);
 
-        jumpBun1.setOnClickListener(new View.OnClickListener() {
+    private void EnableButton(int id,Class purpose){
+        Button button=(Button) findViewById(id);
+        button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,three.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToListView(){
-        Button jumpBunListView=(Button)findViewById(R.id.button_jumpListView);
-
-        jumpBunListView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,activity_listview.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToRecyclerView(){
-        Button jumpBunListView=(Button)findViewById(R.id.button_jumpRecyclerView);
-
-        jumpBunListView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, RicyclerView.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToRecyclerView2(){
-        Button jumpBunListView=(Button)findViewById(R.id.button_jumpRecyclerView2);
-
-        jumpBunListView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, lab42.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToLab5(){
-        Button jumpBunListView=(Button)findViewById(R.id.button_jumplab5);
-
-        jumpBunListView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, lab5.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToLab52() {
-        Button jumpBunListView=(Button)findViewById(R.id.button_jumplab52);
-
-        jumpBunListView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, lab52.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToLab6() {
-        Button jumpBunListView=(Button)findViewById(R.id.button_jumplab6);
-
-        jumpBunListView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, Login.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToImage() {
-        Button jumpBunListView=(Button)findViewById(R.id.button_jumpImage);
-
-        jumpBunListView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, activity_third.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void JumpToMusic() {
-        Button jumpBunListView=(Button)findViewById(R.id.button_jumpMusic);
-
-        jumpBunListView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, MusicPlayer.class);
+                Intent intent=new Intent(MainActivity.this,purpose);
                 startActivity(intent);
             }
         });

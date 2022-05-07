@@ -19,8 +19,8 @@ public class RicyclerView extends AppCompatActivity {
         setContentView(R.layout.activity_ricycler_view);
         RecyclerView recyclerView=(RecyclerView) findViewById(R.id.ReclyclerViewTest);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
-        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
-//        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+//        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
         RecyclerViewAdapter recyclerViewAdapter=new RecyclerViewAdapter(this,initDatas());
         recyclerView.setHasFixedSize(true);

@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         EnableButton(R.id.button_jumpSimpleList,simpleAdapter.class);
         EnableButton(R.id.button_jumpBaseList,baseListView.class);
         EnableButton(R.id.button_jump,secondActivity.class);
+        EnableButton(R.id.button_jumpRobot,RobotMessage.class);
 
 
 

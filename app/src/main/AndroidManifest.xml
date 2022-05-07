@@ -9,25 +9,28 @@
         android:roundIcon="@mipmap/customtest_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculate">
+        <activity
+            android:name=".RobotMessage"
+            android:exported="false" />
+
         <service
             android:name=".MusicService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
         <activity
             android:name=".MusicPlayer"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Calculate.NoActionBar" />
         <activity
             android:name=".three"
             android:exported="false"
             android:theme="@style/Theme.Calculate.NoActionBar">
-
             <intent-filter>
                 <action android:name="top.zzgpro.top.JumpThree" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".Login"
@@ -48,38 +51,38 @@
         <activity
             android:name=".lab52"
             android:exported="false"
-            android:theme="@style/Theme.Calculate.NoActionBar"/>
+            android:theme="@style/Theme.Calculate.NoActionBar" />
         <activity
             android:name=".lab5"
             android:exported="false"
-            android:theme="@style/Theme.Calculate.NoActionBar"/>
+            android:theme="@style/Theme.Calculate.NoActionBar" />
         <activity
             android:name=".lab42"
             android:exported="false"
-            android:theme="@style/Theme.Calculate.NoActionBar"/>
+            android:theme="@style/Theme.Calculate.NoActionBar" />
         <activity
             android:name=".RicyclerView"
             android:exported="false"
-            android:theme="@style/Theme.Calculate.NoActionBar"/>
+            android:theme="@style/Theme.Calculate.NoActionBar" />
         <activity
             android:name=".simpleAdapter"
             android:exported="false"
-            android:theme="@style/Theme.Calculate.NoActionBar"/>
+            android:theme="@style/Theme.Calculate.NoActionBar" />
         <activity
             android:name=".baseListView"
             android:exported="false"
-            android:theme="@style/Theme.Calculate.NoActionBar"/>
+            android:theme="@style/Theme.Calculate.NoActionBar" />
         <activity
             android:name=".activity_listview"
             android:exported="false" />
         <activity
             android:name=".activity_third"
             android:exported="false"
-            android:theme="@style/Theme.Calculate.NoActionBar"/>
+            android:theme="@style/Theme.Calculate.NoActionBar" />
         <activity
             android:name=".secondActivity"
             android:exported="false"
-            android:theme="@style/Theme.Calculate.NoActionBar"/>
+            android:theme="@style/Theme.Calculate.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -91,5 +94,8 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
 
 </manifest>

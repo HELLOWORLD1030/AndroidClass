@@ -204,6 +204,16 @@
         app:layout_constraintTop_toBottomOf="@id/button_jumpImage"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:id="@+id/button_jumpRobot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="qq机器人"
+        app:layout_constraintTop_toBottomOf="@id/button_jumpMusic"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
 
 

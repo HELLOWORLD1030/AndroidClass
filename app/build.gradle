@@ -3,14 +3,7 @@ plugins {
 }
 
 android {
-    signingConfigs {
-        debug {
-            storeFile file('C:\\Users\\HELLO_WORLD\\ZZGAndroidSign.jks')
-            storePassword 'ilovezJ1314'
-            keyAlias 'key'
-            keyPassword 'ilovezJ1314'
-        }
-    }
+
     compileSdk 28
 
     defaultConfig {
